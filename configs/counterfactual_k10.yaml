@@ -1,0 +1,9 @@
+name: counterfactual_dev_fp_k10
+split: dev
+k: 10
+dataset: counterfactual
+retrieval:
+  chunk_mode: paragraph
+  pool: 30
+kv:
+  mode: fp

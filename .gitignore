@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/hotpot/
+data/rgb/
+results/cache/
+*.tmp
+# Large regeneratable artifacts — regenerate per README, do not commit
+data/*.npy
+data/corpus.jsonl
+data/chunks_*.jsonl
+data/questions.jsonl
+data/splits.json
+data/counterfactual.jsonl
+data/rgb_noise.jsonl
+results/*.jsonl
+results/*.png
+results/*.json
+results/figures/
+results/logs/
+results/tables/

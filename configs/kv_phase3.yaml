@@ -1,0 +1,33 @@
+name: kv_phase3
+split: dev
+limit: 30
+k: 10
+retrieval:
+  chunk_mode: paragraph
+  pool: 30
+sweep:
+  - name: fp
+    reference: true
+    kv:
+      mode: fp
+  - name: uniform8
+    kv:
+      mode: uniform
+      bits: 8
+      group: 32
+  - name: uniform4
+    kv:
+      mode: uniform
+      bits: 4
+      group: 32
+  - name: uniform2
+    kv:
+      mode: uniform
+      bits: 2
+      group: 32
+  - name: kivi2
+    kv:
+      mode: kivi
+      bits: 2
+      group: 32
+      layout: kivi

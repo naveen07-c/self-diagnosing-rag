@@ -1,0 +1,8 @@
+name: baseline_k10
+split: dev
+k: 10
+retrieval:
+  chunk_mode: paragraph
+  pool: 30
+kv:
+  mode: fp

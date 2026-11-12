@@ -1,0 +1,15 @@
+batch_size: 32
+calibrated_on: counterfactual proxy (53 dev items); weak agreement, NLI treated as
+  secondary
+calibration_accuracy_all: 0.585
+calibration_accuracy_clear: 0.45
+calibration_kappa_all: 0.049
+calibration_kappa_clear: 0.068
+calibration_note: best-kappa threshold on all 53 was 0.90 (kappa 0.299); 0.50 kept
+  as the neutral operating point because scores are low for multi-hop sentences. NLI
+  is secondary to the counterfactual metric.
+max_length: 512
+model: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
+threshold: 0.5
+window_sentences: 3
+window_tokens: 450
